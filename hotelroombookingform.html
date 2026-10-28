@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+    <h1 align="center">Hotel Room Booking Form</h1>
+    <hr>
+
+    <form action="#" method="get">
+        
+            <legend>Booking Details</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter phone number" required>
+            <br><br>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <br><br>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <br><br>
+
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="">Select Room</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite Room</option>
+            </select>
+            <br><br>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests"
+                   min="1" max="10" required>
+            <br><br>
+
+            <label for="request">Special Requests:</label>
+            <br>
+            <textarea id="request" name="request"
+                      rows="4" cols="40"
+                      placeholder="Enter special requests"></textarea>
+            <br><br>
+
+            <button type="submit">Book Now</button>
+            <button type="reset">Reset</button>
+
+        
+    </form>
+    <hr>
+    <p align="center">Thank you for choosing our hotel!</p>
+</body>
+</html>
